@@ -5,11 +5,12 @@
 }
 
 .container {
-  margin: auto;
+  /* margin: auto; */
   max-width: 500px;
   height: 100vh;
   position: relative;
   padding-top: 10%;
+  padding-left: 10%;
 }
 
 .heading {

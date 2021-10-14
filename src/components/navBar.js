@@ -29,7 +29,8 @@ const NavBar = ({ links }) => {
 
 
     return (
-        <div className={navBar}>
+        <div className={navBar}
+            style={show ? { backgroundColor: 'white' } : {}}>
 
             <div
                 className={container}
