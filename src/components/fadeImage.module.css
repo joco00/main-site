@@ -1,0 +1,11 @@
+.container {
+  position: relative;
+  width: 64px;
+  height: 64px;
+  display: inline-flex;
+}
+
+.image {
+  position: absolute;
+  opacity: 0;
+}
