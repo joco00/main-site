@@ -1,30 +1,24 @@
 import React, { useState } from 'react';
-import { StaticImage } from 'gatsby-plugin-image'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
-import { container, image } from './fadeImage.module.css'
+import { container, imageStyle, overlay, text } from './fadeImage.module.css'
 
-// http://css3.bradshawenterprises.com/cfimg/
+
+// http://css3.bradshawenterprises.com/cfimg/ 
+// https://www.w3schools.com/css/tryit.asp?filename=trycss_css_image_overlay_fade 
 
 const FadeImage = (props) => {
-    const [show, setShow] = useState(false);
 
-    return <div className={container} onClick={() => { setShow(!show); }} >
-        <div className={image} style={!show ? { opacity: 1 } : { opacity: 0 }}>
-            <StaticImage
-                src='../images/navBar.png'
-                alt="open navBar"
-                width={42} aspectRatio={1}
-                loading="eager" />
+    const image = getImage(props.url)
+
+    return <div className={container}>
+        <GatsbyImage
+            image={image}
+            className={imageStyle}
+            alt={props.alt}
+        />
+        <div className={overlay}>
+            <div className={text}>{props.description ? props.description : 'Just ask jake for the description'}</div>
         </div>
-        <div className={image} style={show ? { opacity: 1 } : { opacity: 0 }}>
-            <StaticImage
-                src='../images/x_icon_thin.png'
-                alt="close navBar"
-                width={42} aspectRatio={1}
-                loading="eager" />
-        </div>
-
-
     </div>
 }
 
