@@ -15,7 +15,7 @@ const IndexPage = () => {
           </div>
           <div style={{ height: '100vh' }}>
             <h1>About Me</h1>
-            <p> probably a photo of me traveling with a description of what im passionate about</p>
+            <p> probably a photo of me traveling at somepoint :)</p>
           </div>
         </div>
 
