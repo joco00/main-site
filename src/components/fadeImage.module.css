@@ -10,7 +10,8 @@
   margin-left: auto;
   margin-right: auto;
   /* width: 50%; */
-  height: auto;
+  /* height: auto; */
+  height: 50;
   filter: grayscale(100%);
   transition: 0.5s ease;
   border-radius: 8px;

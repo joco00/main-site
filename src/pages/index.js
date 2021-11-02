@@ -7,10 +7,17 @@ const IndexPage = () => {
   return (
     <>
       <Layout pageTitle="Home Page">
-        <h1>Hi, my name is <span style={{ color: 'skyblue' }}>Jake OConnor</span><br></br>
-          I code things
-        </h1>
-
+        <div>
+          <div style={{ height: '100vh' }}>
+            <h1>Hi, my name is <span style={{ color: 'skyblue' }}>Jake OConnor</span><br></br>
+              I code things
+            </h1>
+          </div>
+          <div style={{ height: '100vh' }}>
+            <h1>About Me</h1>
+            <p> probably a photo of me traveling with a description of what im passionate about</p>
+          </div>
+        </div>
 
       </Layout>
 

@@ -1,5 +1,11 @@
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 .top-container {
-  height: 100vh;
+  min-height: 100vh;
   font-family: sans-serif;
   color: darkgray;
 }
@@ -7,7 +13,7 @@
 .container {
   /* margin: auto; */
   max-width: 500px;
-  height: 100vh;
+  min-height: 100vh;
   position: relative;
   padding-top: 10%;
   padding-left: 10%;
@@ -33,4 +39,28 @@
   color: gray;
   font-weight: 700;
   margin: 3rem 0;
+}
+
+.footer {
+  background-color: lightblue;
+  position: absolute;
+  width: 100%;
+  min-height: 15vh;
+  text-align: center;
+  left: -5px;
+  margin: 0;
+  padding-right: 15px;
+  /* padding-left: 60px; */
+  padding-bottom: 15px;
+
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.image-link {
+  text-decoration: none;
+  position: relative;
+  border: 0 !important;
+  padding-right: 25px;
+  top: 15px;
 }

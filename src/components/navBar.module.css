@@ -29,6 +29,7 @@
   position: absolute;
   opacity: 0;
   z-index: 1;
+  transition: opacity 0.5s ease-in;
 }
 
 .image:hover {
@@ -37,5 +38,13 @@
 
 .transition {
   width: 100%;
-  transition: opacity 0.25s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.xicon {
+  font-size: xx-large;
+}
+
+.baricon {
+  font-size: xxx-large;
 }
