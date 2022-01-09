@@ -7,7 +7,7 @@ const BlogPage = ({ data }) => {
   console.log(data)
   return (
     <Layout pageTitle="My Blog Posts">
-      <h1>Jake's latest posts</h1>
+      <h1 style={{ color: 'lightblue' }}>Jake's latest posts</h1>
       {
         data.allMdx.nodes.map((node) => (
           <article key={node.id}>

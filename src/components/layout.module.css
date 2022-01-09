@@ -12,7 +12,7 @@ body {
 
 .container {
   /* margin: auto; */
-  max-width: 500px;
+  max-width: 45%;
   min-height: 100vh;
   position: relative;
   padding-top: 10%;
